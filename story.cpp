@@ -31,6 +31,10 @@ class MyApp : public App {
       {"black", RGB(0.0, 0.0, 0.0)},  {"white", RGB(1.0, 1.0, 1.0)}};
 
 
+    std::unordered_map<std::string, float> size_word{
+      {"tiny", 10},  {"large", 40}};
+  
+  int fontSize = 24;
   RGB background{0.0, 0.0, 0.0}; 
 
   std::string currentFont = "data/arial.ttf"; // later for adding other fonts based on word choice ? 
@@ -38,7 +42,7 @@ class MyApp : public App {
   void onCreate() override {
     nav().pos(0, 0, 10);
     nav().setHome();
-    font.load("data/arial.ttf", 28, 2048);
+    font.load("data/arial.ttf", fontSize, 2048);
     font.alignCenter();
     std::string alphabet = "abcdefghijklmnopqrstuvwxyz";
     int totalLetters = 200;
@@ -63,6 +67,10 @@ class MyApp : public App {
       for (auto& word : lineToWords(text)) {
         if (color_word.find(word) != color_word.end()) {
           background = color_word[word];
+        }
+
+        if (size_word.find(word) != size_word.end()) {
+          fontSize = size_word[word]; 
         }
       } 
 
