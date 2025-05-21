@@ -31,10 +31,11 @@ class MyApp : public App {
       {"black", RGB(0.0, 0.0, 0.0)},  {"white", RGB(1.0, 1.0, 1.0)}};
 
 
-    std::unordered_map<std::string, int> size_word{
-      {"tiny", 10},  {"large", 40}};
+    std::unordered_map<std::string, float> size_word{
+      {"tiny", 0.3f},  {"large", 1.0f}};
   
   int fontSize = 24;
+  float wordHeight = 0.5f; 
   RGB background{0.0, 0.0, 0.0}; 
 
 // currentFont = "data/arial.ttf"; // later for adding other fonts based on word choice ? 
@@ -42,7 +43,7 @@ class MyApp : public App {
   void onCreate() override {
     nav().pos(0, 0, 10);
     nav().setHome();
-    font.load("data/arial.ttf", fontSize, 2048);
+    font.load("data/arial.ttf", fontSize, 2048); // 
     font.alignCenter();
     std::string alphabet = "abcdefghijklmnopqrstuvwxyz";
     int totalLetters = 200;
@@ -70,7 +71,7 @@ class MyApp : public App {
         }
 
         if (size_word.find(word) != size_word.end()) {
-          fontSize = size_word[word]; 
+          wordHeight = size_word[word]; 
         }
       } 
 
@@ -78,7 +79,7 @@ class MyApp : public App {
       if (foundIndex != std::string::npos) {
         // we heard alexa name
       }
-      font.write(mesh, text.c_str(), 0.3f);
+      font.write(mesh, text.c_str(), wordHeight);
     } 
   } 
 
