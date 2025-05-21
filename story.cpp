@@ -1,6 +1,8 @@
 #include "al/app/al_App.hpp"
 #include "al/graphics/al_Font.hpp"
 #include "al/math/al_Random.hpp"
+#include "al/sound/al_SoundFile.hpp"
+
 using namespace al;
 
 std::vector<std::string> lineToWords(const std::string& line) {
@@ -22,6 +24,7 @@ class MyApp : public App {
   Font font;
   Mesh mesh, letterMesh;
   std::vector<Letter> letters;
+  SoundFilePlayerTS playerTS;
 
   std::unordered_map<std::string, RGB> color_word{
       {"green", RGB(0.0, 1.0, 0.0)},  {"red", RGB(1.0, 0.0, 0.0)},
@@ -31,8 +34,11 @@ class MyApp : public App {
       {"black", RGB(0.0, 0.0, 0.0)},  {"white", RGB(1.0, 1.0, 1.0)}};
 
 
-    std::unordered_map<std::string, float> size_word{
-      {"tiny", 0.3f},  {"large", 1.0f}};
+  std::unordered_map<std::string, float> size_word{
+      {"tiny", 0.3f},  {"huge", 1.0f}};
+
+  std::unordered_map<std::string, std::string> audio_word{
+    {"wind", "night.mp3"}}; 
   
   int fontSize = 24;
   float wordHeight = 0.5f; 
@@ -72,6 +78,10 @@ class MyApp : public App {
 
         if (size_word.find(word) != size_word.end()) {
           wordHeight = size_word[word]; 
+        }
+
+        if (audio_word.find(word) != audio_word.end()) {
+            // audio_word[word]; // play? get string to play the file name 
         }
       } 
 
