@@ -37,7 +37,7 @@ class MyApp : public App {
   int fontSize = 24;
   RGB background{0.0, 0.0, 0.0}; 
 
-  std::string currentFont = "data/arial.ttf"; // later for adding other fonts based on word choice ? 
+  // currentFont = "data/arial.ttf"; // later for adding other fonts based on word choice ? 
 
   void onCreate() override {
     nav().pos(0, 0, 10);
