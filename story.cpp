@@ -31,13 +31,13 @@ class MyApp : public App {
       {"black", RGB(0.0, 0.0, 0.0)},  {"white", RGB(1.0, 1.0, 1.0)}};
 
 
-    std::unordered_map<std::string, float> size_word{
+    std::unordered_map<std::string, int> size_word{
       {"tiny", 10},  {"large", 40}};
   
   int fontSize = 24;
   RGB background{0.0, 0.0, 0.0}; 
 
-  // currentFont = "data/arial.ttf"; // later for adding other fonts based on word choice ? 
+// currentFont = "data/arial.ttf"; // later for adding other fonts based on word choice ? 
 
   void onCreate() override {
     nav().pos(0, 0, 10);
@@ -82,10 +82,7 @@ class MyApp : public App {
     } 
   } 
 
-  void onAnimate(double dt) override {
-    float speed = 1.5f;  
-    float threshold = 0.1f;
-  }
+  void onAnimate(double dt) override {}
 
   void onDraw(Graphics& g) override {
     g.clear(background);
