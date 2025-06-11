@@ -7,7 +7,7 @@ the application listens to spoken input and spawns individual letter agents for 
 
 ## instructions on how to use 
 
-### some basic controls 
+**some basic controls**
 --> speak naturally to generate letter agents
 --> say **"freeze"** to pause all animation 
 --> say **"unfreeze"** to resume movement
@@ -37,17 +37,17 @@ when specific keywords are detected in speech, corresponding environmental sound
 
 _i've attached a document with a list of available words for users to speak_
 
-## flocking 
+**flocking**
 
 letters spawn in word formations, then after 2-5 seconds receive random initial velocities and begin flocking behaviors. each character type displays unique coloring based on it's charachter type. 
 
-each letter functions as an agent implementing multiple behavioral forces:
+each letter functions as an agent implementing these behavioral forces:
 
-- **separation**: maintains minimum distance from other agents
-- **grouping**: letters of identical characters attract each other  
-- **alignment**: letters match velocity with nearby similar letters
-- **boundary containment**: letter remain within defined spatial limits
-- **random movement**: letters have random movememnt 
+--> **separation**: maintains minimum distance from other agents
+--> **grouping**: letters of identical characters attract each other  
+--> **alignment**: letters match velocity with nearby similar letters
+--> **boundary containment**: letter remain within defined spatial limits
+--> **random movement**: letters have random movememnt 
 
 
 <img width="634" alt="Screenshot 2025-06-11 at 14 33 58" src="https://github.com/user-attachments/assets/d693235f-f99d-4d77-b73c-ec1cb846dbcc" />
