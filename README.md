@@ -7,7 +7,7 @@ the application listens to spoken input and spawns individual letter agents for 
 
 ## instructions on how to use 
 
-**some basic controls**
+**some basic controls** <br> 
 --> speak naturally to generate letter agents <br> 
 --> say **"freeze"** to pause all animation <br>
 --> say **"unfreeze"** to resume movement <br>
@@ -15,39 +15,39 @@ the application listens to spoken input and spawns individual letter agents for 
 --> say **"faster"** or **"slower"** to adjust animation speed (say **"normal"** to reset) <br>
 --> say **"clear"** to remove all the letters <br> 
 
-**background colors:** 
---> say any color name to change the background
---> red, blue, green, yellow, purple, orange, pink, cyan, white, black, grey, brown
+**background colors:** <br> 
+--> say any color name to change the background <br> 
+--> red, blue, green, yellow, purple, orange, pink, cyan, white, black, grey, brown <br> 
 
-**letter size:**
---> **"tiny"** = reduced letter size
---> **"regular"** = default size  
---> **"huge"** = enlarged letters
+**letter size:** <br> 
+--> **"tiny"** = reduced letter size <br> 
+--> **"regular"** = default size  <br> 
+--> **"huge"** = enlarged letters <br> 
 
 **flocking distance:**
---> **"close"** = tighter grouping behavior
---> **"normal"** = default grouping distance
---> **"spread"** = increased separation between groups
+--> **"close"** = tighter grouping behavior <br> 
+--> **"normal"** = default grouping distance <br> 
+--> **"spread"** = increased separation between groups <br> 
 
 ### ambient sounds
 
-i selected approximately 100 mundane everyday sounds to create contextual audio responses. i sourced these sounds from either my own archive (phone, camera, etc) or from [pixbay's royalty-free sound effect library ]([url](https://pixabay.com/sound-effects/))
+i selected approximately 100 mundane everyday sounds to create contextual audio responses. i sourced these sounds from either my own archive (phone, camera, etc) or from [pixbay's royalty-free sound effect library ]([url](https://pixabay.com/sound-effects/)) <br> <br> 
 
-when specific keywords are detected in speech, corresponding environmental sounds are triggered and played.
+when specific keywords are detected in speech, corresponding environmental sounds are triggered and played. <br> <br>
 
-_i've attached a document with a list of available words for users to speak_
+_i've attached a document with a list of available words for users to speak_ <br> <br> 
 
-**flocking**
+**flocking** <br> 
 
-letters spawn in word formations, then after 2-5 seconds receive random initial velocities and begin flocking behaviors. each character type displays unique coloring based on it's charachter type. 
+letters spawn in word formations, then after 2-5 seconds receive random initial velocities and begin flocking behaviors. each character type displays unique coloring based on it's charachter type. <br> <br> 
 
-each letter functions as an agent implementing these behavioral forces:
+each letter functions as an agent implementing these behavioral forces: <br> 
 
---> **separation**: maintains minimum distance from other agents
---> **grouping**: letters of identical characters attract each other  
---> **alignment**: letters match velocity with nearby similar letters
---> **boundary containment**: letter remain within defined spatial limits
---> **random movement**: letters have random movememnt 
+--> **separation**: maintains minimum distance from other agents <br> 
+--> **grouping**: letters of identical characters attract each other  <br> 
+--> **alignment**: letters match velocity with nearby similar letters <br> 
+--> **boundary containment**: letter remain within defined spatial limits <br> 
+--> **random movement**: letters have random movememnt <br> 
 
 
 <img width="634" alt="Screenshot 2025-06-11 at 14 33 58" src="https://github.com/user-attachments/assets/d693235f-f99d-4d77-b73c-ec1cb846dbcc" />
