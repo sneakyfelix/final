@@ -8,7 +8,7 @@ the application listens to spoken input and spawns individual letter agents for 
 ## instructions on how to use 
 
 **some basic controls** <br> 
---> speak naturally to generate letter agents <br> 
+--> speak clearly to generate letter agents, ideally say short phrases <br> 
 --> say **"freeze"** to pause all animation <br>
 --> say **"unfreeze"** to resume movement <br>
 --> say **"reset"** to clear all letters from the scene <br> 
