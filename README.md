@@ -31,7 +31,7 @@ the application listens to spoken input and spawns individual letter agents for 
 
 ### ambient sounds
 
-i selected approximately 100 mundane everyday sounds to create contextual audio responses. i sourced these sounds from either my own archive (phone, camera, etc) or from [pixbay's royalty-free sound effect library ]([url](https://pixabay.com/sound-effects/) <br> <br> 
+i selected 50 mundane everyday sounds to create contextual audio responses. i sourced these sounds from either my own archive (phone, camera, etc) or from [pixbay's royalty-free sound effect library ]([url](https://pixabay.com/sound-effects/) <br> <br> 
 
 when specific keywords are detected in speech, corresponding environmental sounds are triggered and played. <br> <br>
 
