@@ -29,7 +29,7 @@ the application listens to spoken input and spawns individual letter agents for 
 --> **faint** = reduced opacity of letters <br> 
 --> **default** = default opacity of letters 
 
-**flocking distance:**
+**flocking distance:** <br> 
 --> **"close"** = tighter grouping behavior <br> 
 --> **"normal"** = default grouping distance <br> 
 --> **"spread"** = increased separation between groups <br> 
