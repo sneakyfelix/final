@@ -24,6 +24,11 @@ the application listens to spoken input and spawns individual letter agents for 
 --> **"regular"** = default size  <br> 
 --> **"huge"** = enlarged letters <br> 
 
+**letter opacity** <br> 
+--> **invisible** = cannot see letters <br>
+--> **faint** = reduced opacity of letters <br> 
+--> **default** = default opacity of letters 
+
 **flocking distance:**
 --> **"close"** = tighter grouping behavior <br> 
 --> **"normal"** = default grouping distance <br> 
