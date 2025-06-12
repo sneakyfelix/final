@@ -284,7 +284,7 @@ class MyApp : public App {
       std::string text;
       m >> text;
 
-      if (text.find("[BLANK_AUDIO]") != std::string::npos) {
+      if (text.find("[BLANK_AUDIO]") != std::string::npos || text.find("[SOUND]") != std::string::npos || text.find("[SOUNDS]") != std::string::npos ) {
         return; // ignore if blank audio 
       }
 
